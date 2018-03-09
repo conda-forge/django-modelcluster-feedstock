@@ -1,6 +1,6 @@
 {% set name = "django-modelcluster" %}
-{% set version = "3.1" %}
-{% set sha256 = "9edde7fb87b413c1114df47f928e95fbd6878de17f9f2caeea90e77766e272b5" %}
+{% set version = "4.1" %}
+{% set sha256 = "2a6c0638ba295d44fc316c42b6da20509b186fe3500c674539441d451de5abfe" %}
 
 
 package:
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - python
-    - django >=1.8
+    - django
     - pytz >=2015.2
     - django-taggit >=0.20
 
