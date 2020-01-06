@@ -1,6 +1,6 @@
 {% set name = "django-modelcluster" %}
-{% set version = "5.0" %}
-{% set sha256 = "a293a1875cb97c1b6e131f53857f0c47e297330c1b5df47737afa54bc10a967d" %}
+{% set version = "5.0.1" %}
+{% set sha256 = "6f857bb0251c0982afeb35474aeedb3ec72260df81a0262188df8108067467ba" %}
 
 
 package:
