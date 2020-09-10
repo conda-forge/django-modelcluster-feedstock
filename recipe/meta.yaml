@@ -1,6 +1,6 @@
 {% set name = "django-modelcluster" %}
-{% set version = "5.0" %}
-{% set sha256 = "a293a1875cb97c1b6e131f53857f0c47e297330c1b5df47737afa54bc10a967d" %}
+{% set version = "5.1" %}
+{% set sha256 = "783d177f7bf5c8f30fe365c347b9a032920de371fe1c63d955d7b283684d4c08" %}
 
 
 package:
@@ -36,8 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Django extension to allow working with clusters of models 
-  as a single unit, independently of the database'
+  summary: Django extension to allow working with clusters of models as a single unit, independently of the database
   description: |
     django-modelcluster extends Django foreign key relations. It 
     introduces a new type of relation, ParentalKey, where the 
