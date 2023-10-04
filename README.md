@@ -1,11 +1,11 @@
-About django-modelcluster
-=========================
+About django-modelcluster-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-modelcluster-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/wagtail/django-modelcluster
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-modelcluster-feedstock/blob/main/LICENSE.txt)
 
 Summary: Django extension to allow working with clusters of models as a single unit, independently of the database
 
