@@ -1,42 +1,42 @@
 {% set name = "django-modelcluster" %}
-{% set version = "6.2" %}
-{% set sha256 = "5a0e2feb2c9ea4407906ce2fbf507e89b9789ab3c4caabfd34ea84aad986f7f4" %}
-
+{% set version = "6.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-modelcluster-{{ version }}.tar.gz
+  sha256: 3f53d47e1af7aec5e238724be16bbebdac9c518e4788b31429e773dcd8e8ea49
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python
-    - setuptools
+    - python >=3.8
+    - pip
   run:
-    - python >=3.7
-    - django >=2.2
-    - pytz >=2015.2
-    - django-taggit >=0.20
+    - python >=3.8
+    - pytz >=2022.4
+    - django >=3.2
 
 test:
   imports:
     - modelcluster
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/wagtail/django-modelcluster
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Django extension to allow working with clusters of models as a single unit, independently of the database'
+  summary: Django extension to allow working with clusters of models as a single unit, independently of the database
   description: |
     django-modelcluster extends Django foreign key relations. It
     introduces a new type of relation, ParentalKey, where the
