@@ -1,5 +1,5 @@
 {% set name = "django-modelcluster" %}
-{% set version = "6.4.1" %}
+{% set version = "6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e736fcee925f83b63218dbf9c869ab50618b0f5e98869a5aa497f7a5331aa263
+  sha256: 459cbf0fb3bbc8c15ea9a2a062abc0d1ef935a38e04aa8ac3cb241c826bbc6dd
 
 build:
   number: 0
