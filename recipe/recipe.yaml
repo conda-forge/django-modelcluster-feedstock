@@ -36,7 +36,7 @@ tests:
       - "*"
 
 about:
-  hohomepageme: https://github.com/wagtail/django-modelcluster
+  homepage: https://github.com/wagtail/django-modelcluster
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
