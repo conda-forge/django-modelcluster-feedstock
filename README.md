@@ -18,16 +18,14 @@ introduces a new type of relation, ParentalKey, where the
 related models are stored locally to the parent model until
 the parent is explicitly saved.
 
-
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3836&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/django-modelcluster-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -155,5 +153,6 @@ Feedstock Maintainers
 
 * [@cshaley](https://github.com/cshaley/)
 * [@darynwhite](https://github.com/darynwhite/)
+* [@rxm7706](https://github.com/rxm7706/)
 * [@sannykr](https://github.com/sannykr/)
 
